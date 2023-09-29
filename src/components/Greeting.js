@@ -10,12 +10,11 @@ const Greeting = () => {
     dispatch(fetchMessages());
   }, [dispatch]);
 
-
   return (
     <>
-      <h1 className='title'>Random Greeting</h1>
-      <div className='container'>
-        <p className='message'>
+      <h1 className="title">Random Greeting</h1>
+      <div className="container">
+        <p className="message">
           {messages.language}
           :
           {messages.greeting}
