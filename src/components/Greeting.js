@@ -9,14 +9,16 @@ const Greeting = () => {
   useEffect(() => {
     dispatch(fetchMessages());
   }, [dispatch]);
-  console.log(messages);
+
 
   return (
     <>
       <h1 className='title'>Random Greeting</h1>
       <div className='container'>
         <p className='message'>
-          {messages.language}: {messages.greeting}
+          {messages.language}
+          :
+          {messages.greeting}
         </p>
       </div>
     </>
